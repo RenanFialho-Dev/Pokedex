@@ -8,7 +8,7 @@ import { IonInfiniteScroll } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit{
-  @ViewChild(IonInfiniteScroll) infinit: IonInfiniteScroll;
+  @ViewChild(IonInfiniteScroll, {static: false}) infinit: IonInfiniteScroll;
   offset = 0;
   pokemon = [];
 
